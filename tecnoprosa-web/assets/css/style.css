@@ -462,21 +462,21 @@ nav input {
 }
 
 .txt-main{
-    background: #000000;
-    padding: 22px;
     width: 100%;
     text-align: center;
     color: #ffffff;
-    opacity: 0.8;
     z-index: 10;
-    /* position: relative;
-    top: 200px; */
+    position: absolute;
+    bottom: 0px;
 }
 
 .txt-main h2{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
+    position: relative;
+    background-color: #008dd5;
+    padding: 15px;
 }
 
 .center{
@@ -546,7 +546,7 @@ nav input {
 .section-experience {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     height: auto;
 }
 
@@ -647,7 +647,7 @@ main {
   padding: 20px;
   border-radius: 15px;
   /* Bordes redondeados */
-  width: 80%;
+  width: 85%;
   /* Ancho del div de descripción */
   height: 400px;
   /* Altura del div de descripción */
@@ -657,25 +657,36 @@ main {
   /* Posición horizontal */
 }
 
+.container-description-right {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  /* Bordes redondeados */
+  width: 85%;
+  /* Ancho del div de descripción */
+  height: 400px;
+  /* Altura del div de descripción */
+  top: -70px;
+  /* Posición vertical */
+  right: -290px;
+  /* Posición horizontal */
+}
+
 .container-img-mision {
   position: relative;
   width: 500px;
-  /* Ancho de la imagen */
   height: 500px;
-  /* Altura de la imagen */
   border-radius: 15px;
-  /* Bordes redondeados */
   overflow: hidden;
   /* Ocultar contenido que se desborde */
 }
 
 .container-img-mision img {
   width: 100%;
-  /* Ancho completo */
   height: 100%;
-  /* Altura completa */
   object-fit: cover;
-  /* Cubrir el espacio sin distorsionar */
 }
 
 .container-main {
@@ -685,35 +696,44 @@ main {
   padding-top: 50px;
 }
 
-@media screen and (max-width: 980px) {
+.container-main-right{
+  display: flex;
+  justify-content: center;
+  /* margin-left: 50vh; */
+  padding-top: 50px;
+}
+
+.container-title-experience{
+  font-size: 1.4rem;
+}
+
+.container-context-experience{
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
   .container-mision {
       flex-direction: column-reverse;
-      /* Cambiar la dirección de los elementos a columna */
       align-items: center;
-      /* Centrar los elementos horizontalmente */
   }
 
   .container-main {
       margin-left: 0px;
   }
+  .container-main-right{
+      margin-left: 0px;
+  }
 
-  .container-description {
+  .container-description, .container-description-right{
       position: relative;
-      /* Cambiar la posición a relativa */
-      margin-top: 20px;
-      /* Margen superior */
+      margin-top: 0px;
       margin-left: 0;
-      /* Reiniciar el margen izquierdo */
-      width: 80%;
-      /* Ancho del div de descripción */
+      width: 100%;
       height: auto;
-      /* Altura automática */
       max-width: 100%;
-      /* Ancho máximo */
       top: auto;
-      /* Reiniciar la posición vertical */
-      left: auto;
-      /* Reiniciar la posición horizontal */
+      left: 0px;
   }
 
   .container-img-mision {
