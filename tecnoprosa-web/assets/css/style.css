@@ -617,3 +617,106 @@ nav input {
     width: 375px;
     opacity: 1;
 }
+
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Ocupar el 100% del alto de la ventana */
+}
+
+.container-mision {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  /* Alineación de los elementos hacia arriba */
+  justify-content: space-between;
+  /* Espacio entre los elementos */
+  max-width: 800px;
+  /* Ancho máximo del contenedor */
+}
+
+.container-description {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  /* Bordes redondeados */
+  width: 80%;
+  /* Ancho del div de descripción */
+  height: 400px;
+  /* Altura del div de descripción */
+  top: -70px;
+  /* Posición vertical */
+  left: -290px;
+  /* Posición horizontal */
+}
+
+.container-img-mision {
+  position: relative;
+  width: 500px;
+  /* Ancho de la imagen */
+  height: 500px;
+  /* Altura de la imagen */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  overflow: hidden;
+  /* Ocultar contenido que se desborde */
+}
+
+.container-img-mision img {
+  width: 100%;
+  /* Ancho completo */
+  height: 100%;
+  /* Altura completa */
+  object-fit: cover;
+  /* Cubrir el espacio sin distorsionar */
+}
+
+.container-main {
+  display: flex;
+  justify-content: center;
+  margin-left: 40%;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 980px) {
+  .container-mision {
+      flex-direction: column-reverse;
+      /* Cambiar la dirección de los elementos a columna */
+      align-items: center;
+      /* Centrar los elementos horizontalmente */
+  }
+
+  .container-main {
+      margin-left: 0px;
+  }
+
+  .container-description {
+      position: relative;
+      /* Cambiar la posición a relativa */
+      margin-top: 20px;
+      /* Margen superior */
+      margin-left: 0;
+      /* Reiniciar el margen izquierdo */
+      width: 80%;
+      /* Ancho del div de descripción */
+      height: auto;
+      /* Altura automática */
+      max-width: 100%;
+      /* Ancho máximo */
+      top: auto;
+      /* Reiniciar la posición vertical */
+      left: auto;
+      /* Reiniciar la posición horizontal */
+  }
+
+  .container-img-mision {
+      width: 100%;
+  }
+}
