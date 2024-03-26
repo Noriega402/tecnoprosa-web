@@ -2,88 +2,6 @@
   margin: 0;
   padding: 0;
 }
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.libre-franklin-<uniquifier> {
-  font-family: "Libre Franklin", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}*/
 
 .subtitle{
     font-family: "Roboto", sans-serif;
@@ -508,6 +426,14 @@ nav input {
     background-position: center;
 }
 
+.parallax-2{
+  height: 450px;
+  background-image: url(../img/truck.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 .parallax-chico h2{
     display: flex;
     height: inherit;
@@ -692,7 +618,7 @@ main {
 .container-main {
   display: flex;
   justify-content: center;
-  margin-left: 40%;
+  /* margin-left: 40%; */
   padding-top: 50px;
 }
 
