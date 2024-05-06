@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/hamburguer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            /* background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30)); */
+        }
+
+        .container {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .imgContainer {
+            width: 100%;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+
+        .slide_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 30px 0 30px;
+        }
+
+        img {
+            position: relative;
+            height: 370px;
+            width: 240px;
+            filter: saturate(10%);
+            transition: 0.7s;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .button {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+            border: none;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        #slider1:target~.imgContainer {
+            left: 60%;
+        }
+
+        #slider2:target~.imgContainer {
+            left: 40%;
+        }
+
+        #slider3:target~.imgContainer {
+            left: 20%;
+        }
+
+        #slider4:target~.imgContainer {
+            left: 0%;
+        }
+
+        #slider5:target~.imgContainer {
+            left: -20%;
+        }
+
+        #slider6:target~.imgContainer {
+            left: -40%;
+        }
+
+        #slider7:target~.imgContainer {
+            left: -60%;
+        }
+
+        .img {
+            height: 370px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+        <span class="slider" id="slider6"></span>
+        <span class="slider" id="slider7"></span>
+
+        <div class="imgContainer">
+
+            <div class="slide_div" id="slide_1">
+                <img src="./assets/img/bru/a1.jpeg" alt="" class="img" id="img1">
+                <button class="button prev" onclick="prevSlide()">◄</button>
+                <button class="button next" onclick="nextSlide()">►</button>
+            </div>
+            <div class="slide_div" id="slide_2">
+                <img src="./assets/img/bru/a2.jpeg" alt="" class="img" id="img2">
+            </div>
+            <div class="slide_div" id="slide_3">
+                <img src="./assets/img/bru/a3.jpeg" alt="" class="img" id="img3">
+            </div>
+            <div class="slide_div" id="slide_4">
+                <img src="./assets/img/bru/a4.jpeg" alt="" class="img" id="img4">
+            </div>
+            <div class="slide_div" id="slide_5">
+                <img src="./assets/img/bru/a5.jpeg" alt="" class="img" id="img5">
+            </div>
+            <div class="slide_div" id="slide_6">
+                <img src="./assets/img/bru/a6.jpeg" alt="" class="img" id="img6">
+            </div>
+            <div class="slide_div" id="slide_7">
+                <img src="./assets/img/bru/a7.jpeg" alt="" class="img" id="img7">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function nextSlide() {
+            var current = document.querySelector('.imgContainer > .slide_div:target');
+            var next = current.nextElementSibling;
+            if (next !== null) {
+                current.removeAttribute('id');
+                next.id = 'slide_' + (parseInt(current.id.split('_')[1]) + 1);
+            }
+        }
+
+        function prevSlide() {
+            var current = document.querySelector('.imgContainer > .slide_div:target');
+            var prev = current.previousElementSibling;
+            if (prev !== null) {
+                current.removeAttribute('id');
+                prev.id = 'slide_' + (parseInt(current.id.split('_')[1]) - 1);
+            }
+        }
+    </script>
+
+</body>
+</html>

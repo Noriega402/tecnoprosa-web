@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/hamburguer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Pruebas de cards</title>
+    <!-- <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 32px;
+        }
+        p{
+            font-family: 'Libre Franklin',consolas;
+            font-size: 20px;
+        }
+
+        .container-mision{
+            outline: 1px solid rgb(50, 4, 106);
+            display: grid;
+            grid-row: ;
+        }
+
+        .container-description{
+            outline: 1 px solid blue;
+            position: absolute;
+            z-index: 100;
+            /* background-color: #ed5454; */
+            width: 600px;
+            grid-area: descripcion;
+        }
+        .container-title-mision{
+            outline: 1 px solid green;
+            text-align: center;
+            grid-area: title;
+        }
+        .container-context-mision{
+            outline: 1px solid slateblue;
+            grid-area: txt;
+        }
+        .container-img-mision{
+            position: relative;
+            background-color: #6d6c6c;
+            width: 500px;
+            height: 400px;
+            grid-area: container-img;
+        }
+        img{
+            object-fit: cover;
+        }
+    </style> -->
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Ocupar el 100% del alto de la ventana */
+        }
+
+        .container-mision {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            /* Alineación de los elementos hacia arriba */
+            justify-content: space-between;
+            /* Espacio entre los elementos */
+            max-width: 800px;
+            /* Ancho máximo del contenedor */
+        }
+
+        .container-description {
+            position: absolute;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            /* Bordes redondeados */
+            width: 80%;
+            /* Ancho del div de descripción */
+            height: 400px;
+            /* Altura del div de descripción */
+            top: -70px;
+            /* Posición vertical */
+            left: -290px;
+            /* Posición horizontal */
+        }
+
+        .container-img-mision {
+            position: relative;
+            width: 500px;
+            /* Ancho de la imagen */
+            height: 500px;
+            /* Altura de la imagen */
+            border-radius: 15px;
+            /* Bordes redondeados */
+            overflow: hidden;
+            /* Ocultar contenido que se desborde */
+        }
+
+        .container-img-mision img {
+            width: 100%;
+            /* Ancho completo */
+            height: 100%;
+            /* Altura completa */
+            object-fit: cover;
+            /* Cubrir el espacio sin distorsionar */
+        }
+
+        .container-main {
+            display: flex;
+            justify-content: center;
+            margin-left: 200px;
+        }
+
+        @media screen and (max-width: 980px) {
+            .container-mision {
+                flex-direction: column-reverse;
+                /* Cambiar la dirección de los elementos a columna */
+                align-items: center;
+                /* Centrar los elementos horizontalmente */
+            }
+
+            .container-main {
+                margin-left: 0px;
+            }
+
+            .container-description {
+                position: relative;
+                /* Cambiar la posición a relativa */
+                margin-top: 20px;
+                /* Margen superior */
+                margin-left: 0;
+                /* Reiniciar el margen izquierdo */
+                width: 80%;
+                /* Ancho del div de descripción */
+                height: auto;
+                /* Altura automática */
+                max-width: 100%;
+                /* Ancho máximo */
+                top: auto;
+                /* Reiniciar la posición vertical */
+                left: auto;
+                /* Reiniciar la posición horizontal */
+            }
+
+            .container-img-mision {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-main">
+        <main>
+            <div class="container-mision">
+                <div class="container-description">
+                    <div class="container-title-mision">
+                        <h2>Transformando industrias</h2>
+                    </div>
+                    <div class="container-context-mision">
+                        <p>En TECNOPROSA S.A, nos especializamos en la transformación de metales, ofreciendo servicios
+                            personalizados con tecnologías avanzadas y un enfoque centrado en el cliente. Nuestro
+                            compromiso
+                            con la excelencia, la innovación y la satisfacción del cliente nos consolida como líderes
+                            confiables en la industria.</p>
+                    </div>
+                </div>
+                <div class="container-img-mision">
+                    <img src="./assets/img/soldador.jpeg" alt="" height="400px" width="400px">
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+</body>
+
+</html>
