@@ -14,6 +14,124 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d5f4a5e00.js" crossorigin="anonymous"></script>
+    <style>
+        .slider-container {
+            width: 100%;
+            /* height: 100vh; */
+            /* background-image: url('Images/bg-img.png');
+            background-repeat: no-repeat;
+            background-position: center; */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-images {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+        }
+
+        .slider-images img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .slider-img {
+            width: 110px;
+            border-radius: 6px;
+            cursor: pointer;
+            position: relative;
+            transition: 0.7s ease;
+        }
+
+        .slider-images .slider-img:first-child,
+        .slider-images .slider-img:last-child {
+            height: 380px;
+        }
+
+        .slider-images .slider-img:nth-child(2),
+        .slider-images .slider-img:nth-child(6) {
+            height: 460px;
+        }
+
+        .slider-images .slider-img:nth-child(3),
+        .slider-images .slider-img:nth-child(4),
+        .slider-images .slider-img:nth-child(5) {
+            height: 565px;
+        }
+
+        h1 {
+            font-family: "Jost", sans-serif;
+            font-size: 35px;
+            font-weight: 700;
+            text-align: left;
+            text-transform: uppercase;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: -10%;
+            transform: rotate(270deg);
+            transition: 0.7s ease;
+        }
+
+        .details {
+            position: absolute;
+            bottom: 43px;
+            left: 43px;
+        }
+
+        .details h2 {
+            font-family: "Jost", sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            text-align: left;
+            line-height: 44px;
+            text-align: left;
+            color: #fff;
+            text-transform: uppercase;
+            transition: 0.7s ease;
+            display: none;
+        }
+
+        .details p {
+            font-family: "Jost", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: left;
+            line-height: 33px;
+            text-align: left;
+            color: #fff;
+            text-transform: uppercase;
+            transition: 0.7s ease;
+            display: none;
+        }
+
+        .slider-img.active {
+            width: 500px !important;
+            height: 550px !important;
+        }
+
+        .slider-img.active h1 {
+            display: none;
+        }
+
+        .slider-img.active .details p,
+        .slider-img.active .details h2 {
+            display: block;
+        }
+
+        .first {
+            top: 80%;
+            width: 110%;
+            height: 50px;
+            left: -4%;
+            top: 65%;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,9 +139,10 @@
     <div class="container">
         <input type="checkbox" id="btn-mas">
         <div class="redes">
-            <a href="#" class="fa fa-facebook facebook"></a>
-            <a href="#" class="fa-solid fa-envelope email"></a>
-            <a href="#" class="fa-brands fa-whatsapp whatsapp"></a>
+            <a href="https://www.facebook.com/Tecnoprosa" class="fa fa-facebook facebook" target="_blank"></a>
+            <a href="mailto:info@tecnoprosa.com" class="fa-solid fa-envelope email"></a>
+            <a href="https://wa.me/50233160025?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios." class="fa-brands fa-whatsapp whatsapp" target="_blank"></a>
+
         </div>
         <div class="btn-mas">
             <label for="btn-mas" class="fa fa-plus"></label>
@@ -34,7 +153,7 @@
         <div class="wrapper">
             <div class="logo">
                 <a href="#">
-                    <img src="./assets/img/logo.jpg" alt="">
+                    <img src="./assets/img/varias/logo.jpg" alt="">
                 </a>
             </div>
             <input type="radio" name="slider" id="menu-btn">
@@ -133,16 +252,74 @@
             nesciunt ab, accusamus a explicabo corporis iure quae? In quibusdam commodi temporibus.</p>
     </section> -->
 
-    <section class="center espacio productos">
-        <!-- <h2>TRABAJOS REALIZADOS</h2> -->
-        <!-- <section class="productos"> -->
+    <!-- <section class="center espacio productos">
         <img src="./assets/img/bru/j8.jpeg" alt="">
         <img src="./assets/img/moldes/corazones-moldes.jpeg" alt="">
         <img src="./assets/img/Pinza/img31.jpg" alt="">
         <img src="./assets/img/tolva-inox/7.jpg" alt="">
         <img src="./assets/img/tolva/1.jpg" alt="">
         <img src="./assets/img/silo-20/44.jpg" alt="">
-        <!-- </section> -->
+    </section> -->
+    <br><br><br>
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="assets/img/silo-29/img6.jpg" alt="1" />
+                <h1>Silos</h1>
+                <div class="details">
+                    <h2>Silos</h2>
+                    <p>Fabricación de silo</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="assets/img/montaje-tayasal/grua-2.jpg" alt="2" />
+                <h1>Montajes</h1>
+                <div class="details">
+                    <h2>Montajes</h2>
+                    <p>Puente grua</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="assets/img/Pinza/img1.jpg" alt="3" />
+                <h1>Pinzas</h1>
+                <div class="details">
+                    <h2>Pinzas</h2>
+                    <p>Pinzas para transportar block</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="assets/img/bru/j8.jpeg" alt="4" />
+                <h1 class="first">Agroindustria</h1>
+                <div class="details">
+                    <h2>Agroindustria</h2>
+                    <p>Jaulas Cañeras</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="assets/img/moldes/corazones-moldes.jpeg" alt="5" />
+                <h1>Piezas</h1>
+                <div class="details">
+                    <h2>Piezas</h2>
+                    <p>Corazones para moldes de block</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="assets/img/moldes/molde.jpeg" alt="6" />
+                <h1>Bloqueras</h1>
+                <div class="details">
+                    <h2>Bloqueras</h2>
+                    <p>Molde para bloqueras</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="assets/img/varias/piezas.jpg" alt="7" />
+                <h1>Ductos</h1>
+                <div class="details">
+                    <h2>Ductos</h2>
+                    <p>Piezas para ductos de ventilacion</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- <section class="parallax-2">
@@ -234,7 +411,7 @@
             de la transformación de metales.</p>
         <div class="services">
             <div class="service">
-                <img src="https://images.ssstatic.com/prensa-dobladora-de-cortina-cincinnati-300-toneladas-12-pies-4902490z0-005416138.png"
+                <img src="assets/img/maquinas/guillotina.jpg"
                     alt="Corte de cizalla">
                 <div class="service-info">
                     <h3>Corte de cizalla</h3>
@@ -243,7 +420,7 @@
                 </div>
             </div>
             <div class="service">
-                <img src="https://images.ssstatic.com/prensa-dobladora-de-cortina-cincinnati-300-toneladas-12-pies-4902490z0-005416138.png"
+                <img src="assets/img/maquinas/dobladora-1.jpg"
                     alt="Dobladora">
                 <div class="service-info">
                     <h3>Dobladora</h3>
@@ -252,7 +429,7 @@
                 </div>
             </div>
             <div class="service">
-                <img src="https://images.ssstatic.com/prensa-dobladora-de-cortina-cincinnati-300-toneladas-12-pies-4902490z0-005416138.png"
+                <img src="assets/img/maquinas/roladora.jpg"
                     alt="Roladora">
                 <div class="service-info">
                     <h3>Roladora</h3>
@@ -267,6 +444,15 @@
     <script src="./assets/js/hamburguer.js"></script>
     <script src="./assets/js/dropdown.js"></script>
     <script src="./assets/js/slide.js"></script>
+    <script src="assets/js/jQuery.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".slider-img").on("click", function () {
+                $(".slider-img").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
 </body>
 
 </html>
