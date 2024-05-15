@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,122 +16,6 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d5f4a5e00.js" crossorigin="anonymous"></script>
     <style>
-        .slider-container {
-            width: 100%;
-            /* height: 100vh; */
-            /* background-image: url('Images/bg-img.png');
-            background-repeat: no-repeat;
-            background-position: center; */
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .slider-images {
-            display: flex;
-            align-items: center;
-            gap: 21px;
-        }
-
-        .slider-images img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 6px;
-        }
-
-        .slider-img {
-            width: 110px;
-            border-radius: 6px;
-            cursor: pointer;
-            position: relative;
-            transition: 0.7s ease;
-        }
-
-        .slider-images .slider-img:first-child,
-        .slider-images .slider-img:last-child {
-            height: 380px;
-        }
-
-        .slider-images .slider-img:nth-child(2),
-        .slider-images .slider-img:nth-child(6) {
-            height: 460px;
-        }
-
-        .slider-images .slider-img:nth-child(3),
-        .slider-images .slider-img:nth-child(4),
-        .slider-images .slider-img:nth-child(5) {
-            height: 565px;
-        }
-
-        h1 {
-            font-family: "Jost", sans-serif;
-            font-size: 35px;
-            font-weight: 700;
-            text-align: left;
-            text-transform: uppercase;
-            color: #fff;
-            position: absolute;
-            top: 50%;
-            left: -10%;
-            transform: rotate(270deg);
-            transition: 0.7s ease;
-        }
-
-        .details {
-            position: absolute;
-            bottom: 43px;
-            left: 43px;
-        }
-
-        .details h2 {
-            font-family: "Jost", sans-serif;
-            font-size: 26px;
-            font-weight: 700;
-            text-align: left;
-            line-height: 44px;
-            text-align: left;
-            color: #fff;
-            text-transform: uppercase;
-            transition: 0.7s ease;
-            display: none;
-        }
-
-        .details p {
-            font-family: "Jost", sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            text-align: left;
-            line-height: 33px;
-            text-align: left;
-            color: #fff;
-            text-transform: uppercase;
-            transition: 0.7s ease;
-            display: none;
-        }
-
-        .slider-img.active {
-            width: 500px !important;
-            height: 550px !important;
-        }
-
-        .slider-img.active h1 {
-            display: none;
-        }
-
-        .slider-img.active .details p,
-        .slider-img.active .details h2 {
-            display: block;
-        }
-
-        .first {
-            top: 80%;
-            width: 110%;
-            height: 50px;
-            left: -4%;
-            top: 65%;
-        }
     </style>
 </head>
 
@@ -141,7 +26,8 @@
         <div class="redes">
             <a href="https://www.facebook.com/Tecnoprosa" class="fa fa-facebook facebook" target="_blank"></a>
             <a href="mailto:info@tecnoprosa.com" class="fa-solid fa-envelope email"></a>
-            <a href="https://wa.me/50233160025?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios." class="fa-brands fa-whatsapp whatsapp" target="_blank"></a>
+            <a href="https://wa.me/50233160025?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios."
+                class="fa-brands fa-whatsapp whatsapp" target="_blank"></a>
 
         </div>
         <div class="btn-mas">
@@ -222,36 +108,6 @@
             <h2>TRANSFORMAMOS EL METAL EN SOLUCIONES UTILES PARA LA INDUSTRIA</h2>
         </div>
     </header>
-    <!-- <section class="center espacio">
-        <h2>Visión</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus quisquam aperiam adipisci
-            laudantium accusantium similique sint earum, iusto itaque quasi ad assumenda deleniti ratione vitae aliquid
-            hic repellendus impedit obcaecati laborum quis tempore nesciunt aspernatur fugit! Magnam eos debitis ab
-            similique atque obcaecati voluptas porro officiis cumque odio officia aperiam quibusdam sed, quas vero
-            earum? Esse placeat soluta explicabo consequuntur illo recusandae amet voluptatibus pariatur exercitationem
-            et velit voluptates qui, maiores corporis natus ipsam porro accusantium, delectus sapiente cumque aperiam
-            nesciunt deserunt sunt! Soluta vel voluptates et reprehenderit voluptate! Nihil earum placeat libero, non
-            illo laudantium enim cum amet. Itaque, est. Sequi temporibus atque odit perspiciatis numquam, a distinctio
-            architecto, consequatur neque, quae dolor rerum. Magni, quam. Soluta rem ex aspernatur eveniet, voluptates
-            possimus perferendis ad inventore rerum mollitia praesentium quod nostrum similique ullam beatae eos sunt
-            nesciunt ab, accusamus a explicabo corporis iure quae? In quibusdam commodi temporibus.</p>
-    </section>
-
-    <section class="center espacio">
-        <h2>Misión</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus quisquam aperiam adipisci
-            laudantium accusantium similique sint earum, iusto itaque quasi ad assumenda deleniti ratione vitae aliquid
-            hic repellendus impedit obcaecati laborum quis tempore nesciunt aspernatur fugit! Magnam eos debitis ab
-            similique atque obcaecati voluptas porro officiis cumque odio officia aperiam quibusdam sed, quas vero
-            earum? Esse placeat soluta explicabo consequuntur illo recusandae amet voluptatibus pariatur exercitationem
-            et velit voluptates qui, maiores corporis natus ipsam porro accusantium, delectus sapiente cumque aperiam
-            nesciunt deserunt sunt! Soluta vel voluptates et reprehenderit voluptate! Nihil earum placeat libero, non
-            illo laudantium enim cum amet. Itaque, est. Sequi temporibus atque odit perspiciatis numquam, a distinctio
-            architecto, consequatur neque, quae dolor rerum. Magni, quam. Soluta rem ex aspernatur eveniet, voluptates
-            possimus perferendis ad inventore rerum mollitia praesentium quod nostrum similique ullam beatae eos sunt
-            nesciunt ab, accusamus a explicabo corporis iure quae? In quibusdam commodi temporibus.</p>
-    </section> -->
-
     <!-- <section class="center espacio productos">
         <img src="./assets/img/bru/j8.jpeg" alt="">
         <img src="./assets/img/moldes/corazones-moldes.jpeg" alt="">
@@ -260,8 +116,8 @@
         <img src="./assets/img/tolva/1.jpg" alt="">
         <img src="./assets/img/silo-20/44.jpg" alt="">
     </section> -->
-    <br><br><br>
-    <section class="slider-container">
+    <!-- VERSION DESKTOP -->
+    <section class="slider-container desktop">
         <div class="slider-images">
             <div class="slider-img">
                 <img src="assets/img/silo-29/img6.jpg" alt="1" />
@@ -322,6 +178,60 @@
         </div>
     </section>
 
+    <!-- VERSION MOBILE y TABLET -->
+    <br><br>
+    <section class="collage-mobile">
+        <div class="collage-img-mobile">
+            <img src="assets/img/silo-29/img6.jpg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Silos</h2>
+                <p>Fabricación de silo</p>
+            </div>
+        </div>
+        <div class="collage-img-mobile">
+            <img src="assets/img/montaje-tayasal/grua-2.jpg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Montajes</h2>
+                <p>Puente grua</p>
+            </div>
+        </div>
+        <div class="collage-img-mobile">
+            <img src="assets/img/Pinza/img1.jpg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Pinzas</h2>
+                <p>Pinza para transporte de block</p>
+            </div>
+        </div>
+        <div class="collage-img-mobile">
+            <img src="assets/img/bru/j8.jpeg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Agroindustria</h2>
+                <p>Jaula Cañera</p>
+            </div>
+        </div>
+        <div class="collage-img-mobile">
+            <img src="assets/img/moldes/corazones-moldes.jpeg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Piezas</h2>
+                <p>Corazones para moldes de block</p>
+            </div>
+        </div>
+        <div class="collage-img-mobile">
+            <img src="assets/img/moldes/molde.jpeg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Moldes</h2>
+                <p>Fabricación de moldes</p>
+            </div>
+        </div>
+        <div class="collage-img-mobile">
+            <img src="assets/img/varias/piezas.jpg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Ductos</h2>
+                <p>Piezas para ductos</p>
+            </div>
+        </div>
+    </section>
+
     <!-- <section class="parallax-2">
         <h2>Menos altura</h2>
     </section> -->
@@ -372,36 +282,6 @@
         </div>
     </section> -->
 
-    <!-- <div class="container-info-somos">
-        <div class="slider">
-            <img class="slide" src="assets/img/corazones-moldes.jpeg" alt="Molde">
-            <img class="slide" src="assets/img/Sprocket_kenny.jpg" alt="Soldador">
-            <img class="slide" src="assets/img/truck.jpeg" alt="Molde Block">
-        </div>
-        <div class="about">
-            <h2>¿Quiénes somos?</h2>
-            <p>Somos una empresa guatemalteca dedicada a desarrollar soluciones para la industria por medio de la
-                transformación del metal. Nuestra filosofía, basada en la integridad, la innovación y el compromiso con
-                la satisfacción de los clientes, ha permitido consolidarnos como una empresa líder y confiable en la
-                industria de la transformación de metales.</p>
-            <p>Contamos con los siguientes servicios:</p>
-            <ul>
-                <li>Corte de cizalla</li>
-                <li>Dobladora</li>
-                <li>Roladora</li>
-                <li>Corte de plasma CNC</li>
-                <li>Torno</li>
-                <li>Fresadora vertical y horizontal</li>
-                <li>Sierra de cinta</li>
-                <li>Barreno radial</li>
-                <li>Soldadura industrial</li>
-                <li>Montajes industriales</li>
-                <li>Equipo de Diseño <b>Software 2D y 3D para simulaciones previas a la producción, asegurando la
-                        calidad y trazabilidad de nuestras soluciones)</b>.</li>
-            </ul>
-        </div>
-    </div> -->
-
     <div class="about">
         <h2>¿Quiénes somos?</h2>
         <p class="description-info">Somos una empresa guatemalteca dedicada a desarrollar soluciones para la industria
@@ -411,8 +291,7 @@
             de la transformación de metales.</p>
         <div class="services">
             <div class="service">
-                <img src="assets/img/maquinas/guillotina.jpg"
-                    alt="Corte de cizalla">
+                <img src="assets/img/maquinas/guillotina.jpg" alt="Corte de cizalla">
                 <div class="service-info">
                     <h3>Corte de cizalla</h3>
                     <p>Proceso de corte de láminas metálicas mediante una cizalla para obtener piezas con bordes limpios
@@ -420,8 +299,7 @@
                 </div>
             </div>
             <div class="service">
-                <img src="assets/img/maquinas/dobladora-1.jpg"
-                    alt="Dobladora">
+                <img src="assets/img/maquinas/dobladora-1.jpg" alt="Dobladora">
                 <div class="service-info">
                     <h3>Dobladora</h3>
                     <p>Maquinaria utilizada para doblar láminas metálicas y darles forma según las necesidades del
@@ -429,30 +307,81 @@
                 </div>
             </div>
             <div class="service">
-                <img src="assets/img/maquinas/roladora.jpg"
-                    alt="Roladora">
+                <img src="assets/img/maquinas/roladora.jpg" alt="Roladora">
                 <div class="service-info">
                     <h3>Roladora</h3>
                     <p>Proceso de conformado de láminas metálicas para obtener curvaturas y formas específicas en los
                         materiales.</p>
                 </div>
             </div>
+            <div class="service">
+                <img src="assets/img/maquinas/CNC.jpg" alt="Roladora">
+                <div class="service-info">
+                    <h3>CNC 125 amperios</h3>
+                    <p>Cortes de plasma finos y especiales en acero, acero inoxidable y aluminio, contamos con capacidad de corte de hasta 1,500 metros lineales al día.</p>
+                </div>
+            </div>
             <!-- Agrega más servicios aquí -->
         </div>
     </div>
 
+    <div class="container-maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d966.0912204612418!2d-90.69153300000004!3d14.406117300000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890500025d0321%3A0x2d189741ec111983!2sTECNOPROSA!5e0!3m2!1ses-419!2sgt!4v1715742485552!5m2!1ses-419!2sgt"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="assets/img/varias/logo.jpg" alt="Logo de la Empresa" class="logo">
+            </div>
+            <div class="footer-center">
+                <div class="products">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="#moldes-block">Moldes para block</a></li>
+                        <li><a href="#moldes-adoquin">Moldes de adoquín</a></li>
+                        <li><a href="#silos-almacenamiento">Silos de almacenamiento</a></li>
+                        <li><a href="#agroindustria">Agroindustria</a></li>
+                        <li><a href="#personalizados">Personalizados</a></li>
+                    </ul>
+                </div>
+                <div class="products">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#corte-plasma">Corte de plasma en CNC</a></li>
+                        <li><a href="#metal-mecanica">Metal Mecánica</a></li>
+                        <li><a href="#corte-cizalla">Corte en cizalla</a></li>
+                        <li><a href="#rolados">Rolados</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Contáctanos</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Zona 3, Calle 0-54, Palin Escuintla.</p>
+                    <p><i class="fas fa-phone-alt"></i> +502 3316-0025</p>
+                    <p><i class="fas fa-envelope"></i> info@tecnoprosa.com</p>
+                    <p><i class="fas fa-briefcase"></i> <a href="#trabaja-con-nosotros">Trabaja con Nosotros</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="developer-info">
+                Desarrollado por Daniel Noriega
+            </div>
+            <div class="footer-copyright">
+                &copy; 2024 TECNOPROSA | Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
     <script src="./assets/js/hamburguer.js"></script>
     <script src="./assets/js/dropdown.js"></script>
-    <script src="./assets/js/slide.js"></script>
     <script src="assets/js/jQuery.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            $(".slider-img").on("click", function () {
-                $(".slider-img").removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-    </script>
+    <script src="assets/js/slide.js"></script>
 </body>
 
 </html>

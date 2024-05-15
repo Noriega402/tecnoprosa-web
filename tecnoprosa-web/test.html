@@ -1,25 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Slider</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Imagenes con Texto</title>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
-
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
+        body {
+            margin: 0;
+            padding: 0;
             font-family: "Jost", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
-</style>
+
+        .slider-container-mobile {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .slider-img-mobile {
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .slider-img-mobile img {
+            max-width: 450px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .details-mobile {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .details-mobile h2,
+        .details-mobile p {
+            margin: 0;
+            color: #fff;
+        }
+
+        .details-mobile h2 {
+            font-size: 24px;
+        }
+
+        .details-mobile p {
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d241.52279468838236!2d-90.69160046669509!3d14.406126929573562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sgt!4v1715668620127!5m2!1ses-419!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <section class="slider-container-mobile">
+        <div class="slider-img-mobile">
+            <img src="assets/img/silo-29/img6.jpg" alt="Silos">
+            <div class="details-mobile">
+                <h2>Silos</h2>
+                <p>Fabricación de silo</p>
+            </div>
+        </div>
+        <div class="slider-img-mobile">
+            <img src="assets/img/montaje-tayasal/grua-2.jpg" alt="Montajes">
+            <div class="details-mobile">
+                <h2>Montajes</h2>
+                <p>Puente grua</p>
+            </div>
+        </div>
+        <div class="slider-img-mobile">
+            <img src="assets/img/Pinza/img1.jpg" alt="Pinzas">
+            <div class="details-mobile">
+                <h2>Pinzas</h2>
+                <p>Pinzas para transportar block</p>
+            </div>
+        </div>
+        <div class="slider-img-mobile">
+            <img src="assets/img/bru/j8.jpeg" alt="Agroindustria">
+            <div class="details-mobile">
+                <h2>Agroindustria</h2>
+                <p>Jaulas Cañeras</p>
+            </div>
+        </div>
+        <div class="slider-img-mobile">
+            <img src="assets/img/moldes/corazones-moldes.jpeg" alt="Piezas">
+            <div class="details-mobile">
+                <h2>Piezas</h2>
+                <p>Corazones para moldes de block</p>
+            </div>
+        </div>
+        <div class="slider-img-mobile">
+            <img src="assets/img/moldes/molde.jpeg" alt="Bloqueras">
+            <div class="details-mobile">
+                <h2>Bloqueras</h2>
+                <p>Molde para bloqueras</p>
+            </div>
+        </div>
+        <div class="slider-img-mobile">
+            <img src="assets/img/varias/piezas.jpg" alt="Ductos">
+            <div class="details-mobile">
+                <h2>Ductos</h2>
+                <p>Piezas para ductos de ventilación</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
